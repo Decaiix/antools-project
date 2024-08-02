@@ -1,0 +1,204 @@
+*,*:after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --headerbg:#1E252B;
+    --logocol:rgba(255, 255, 255, 0.90);
+    --navlinks:rgba(255, 255, 255, 0.55);
+    --login:rgba(255, 255, 255, 0.78);
+    --singup:#FDF5FF;
+    --accent-col:#FF6E30;
+    --search-col:#283036;
+    --border-search:rgba(255, 255, 255, 0.10);
+    --white:#FFF;
+    --caret-col:#837A93;
+    --input-placehorder:rgba(255, 255, 255, 0.38);
+}
+            /*fonts*/
+        /* font-family: "Lora", serif;
+          font-family: "Roboto", sans-serif;
+        font-family: "Poppins", sans-serif; */
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+.container{
+    width: 1236px;
+    padding-inline: 8px;
+    margin-inline: auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+img{
+    display: block;
+}
+.header{
+    padding-top: 36px;
+    height: 100vh;
+    background-color: var(--headerbg);
+    background-image: url(../imgs/headerdecor.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    margin-right: 257px;
+}
+.logo{
+    cursor: pointer;
+    width: 20px;
+}
+.logo-txt{
+    color: var(--logocol);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.nav-list{
+    display: flex;
+    gap: 42px;
+    margin-right: 193px;
+}
+.nav-item{
+    color: var(--navlinks);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+/* .nav-item:hover{
+    color: var(--logocol);
+} */
+.nav-item:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: var(--logocol);
+}
+.header-arrow{
+    position: absolute;
+    left: 103%;
+    top: 4px;
+    width: 18px;
+}
+.r-nav{
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+.login{
+    color: var(--login);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: ease-in-out .2s;
+}
+.login:hover{
+    color: var(--logocol);
+}
+.singup-button{
+    padding: 12px 28px;
+    color: var(--singup);
+    background-color: var(--accent-col);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out .15s;
+}
+.singup-button:hover{
+    scale: 1.05;
+    box-shadow: 0 1px 10px 2px #FF6E30;
+}
+.header-title{
+    width: 600px;
+    color: var(--logocol);
+    font-size: 50px;
+    font-weight: 500;
+    line-height:1.4;
+    margin-top: 104px;
+    margin-bottom: 30px;
+}
+.header-span{
+    color: var(--accent-col);
+}
+.header-text{
+    width: 487px;
+    color: var(--navlinks);
+    font-size: 18px;
+    font-weight: 400;
+    line-height:1.6;
+    margin-bottom: 60px;
+}
+.search{
+    padding: 8px 11px 8px 18px;
+    border-radius: 15px;
+    border: 1.5px solid var(--border-search);
+    background: var(--search-col);
+    width: 498px;
+    height: 64px;
+    align-items: center;
+    display: flex;
+}
+.search-icon{
+    position: relative;
+    width: 24px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+.input-search{
+    background-color: transparent;
+    border: none;
+    margin-right:2%;
+    width:98%;
+    color: var(--input-placehorder);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.input-search::-webkit-search-cancel-button{
+    display:none;
+}
+.input-search:focus{
+   outline: none;
+   caret-color: var(--caret-col);
+   color: rgba(255, 255, 255, 0.567);
+}
+.search-button{
+    padding: 12px 36px;
+    border-radius: 8px;
+    background-color: var(--accent-col);
+    border: none;
+    color: var(--white);
+    font-size: 16px;    
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.media-header{
+    display: flex;
+    gap: 30px;
+    margin-top:121px;
+}
+.media-icon{
+    width: 36px;
+    
+}
