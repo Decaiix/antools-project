@@ -15,6 +15,10 @@
     --white:#FFF;
     --caret-col:#837A93;
     --input-placehorder:rgba(255, 255, 255, 0.38);
+    --appprice:rgba(255, 165, 55, 0.55);
+    --popular-border:rgba(255, 255, 255, 0.10);
+    --popularhoverbg:rgba(40, 48, 54, 0.60);
+    --popularhoverborder:rgba(255, 255, 255, 0.80);
 }
             /*fonts*/
         /* font-family: "Lora", serif;
@@ -24,8 +28,8 @@
             font-family: "Poppins", sans-serif;
         }
 .container{
-    width: 1236px;
-    padding-inline: 8px;
+    width: 1256px;
+    padding-inline: 15px;
     margin-inline: auto;
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -201,4 +205,99 @@ img{
 .media-icon{
     width: 36px;
     
+}
+.popular{
+    background-color: var(--headerbg);
+    padding-block: 200px;
+}
+.popular-title{
+    color: var(--logocol);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.popular-sub-title{
+    margin-bottom: 90px;
+    width: 427px;
+    text-align: center;
+    margin-inline: auto;
+    color: var(--navlinks);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height:1.6;
+}
+.app-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:  120px 24px;
+    flex-basis: calc((100% - 48px)/3);
+}
+.app-item{
+    cursor: pointer;
+    padding: 34px 33px 42px 33px;
+    border-radius: 15px;
+}
+.app-item:hover{
+    border: 2px solid var(--popularhoverborder);
+    background: var(--popularhoverbg);
+    backdrop-filter: blur(25px);
+}
+.app-info{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.app-name{
+    margin-bottom: 3px;
+    color: var(--login);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.app-price{
+    color: var(--appprice);
+    font-size: 18px;
+    font-weight: 400;
+    line-height:1.5;
+    margin-bottom: 30px;
+}
+.app-text{
+    width: 326px;
+    color: var(--navlinks);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8; 
+    margin-bottom: 37px;
+}
+.visit-app{
+    color: var(--navlinks);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.app-dop{
+    display: flex;
+    gap: 18px;
+}
+.app-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-button{
+    color: var(--accent-col);
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.5;
+    border-radius: 8px;
+    border: 1px solid var(--popular-border);
+    background: transparent;
+    padding: 17px 38px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.pop-button{
+    text-align: center;
 }
